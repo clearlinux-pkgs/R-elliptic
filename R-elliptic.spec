@@ -4,7 +4,7 @@
 #
 Name     : R-elliptic
 Version  : 1.3.7
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/elliptic_1.3-7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/elliptic_1.3-7.tar.gz
 Summary  : Elliptic Functions
