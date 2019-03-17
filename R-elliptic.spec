@@ -4,14 +4,12 @@
 #
 Name     : R-elliptic
 Version  : 1.4.0
-Release  : 10
+Release  : 11
 URL      : https://cran.r-project.org/src/contrib/elliptic_1.4-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/elliptic_1.4-0.tar.gz
 Summary  : Weierstrass and Jacobi Elliptic Functions
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-calibrator
-Requires: R-emulator
 BuildRequires : R-calibrator
 BuildRequires : R-emulator
 BuildRequires : buildreq-R
@@ -29,10 +27,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552570992
+export SOURCE_DATE_EPOCH=1552807213
 
 %install
-export SOURCE_DATE_EPOCH=1552570992
+export SOURCE_DATE_EPOCH=1552807213
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -68,8 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library elliptic|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  elliptic || :
 
 
 %files
@@ -104,3 +101,4 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/elliptic/help/paths.rds
 /usr/lib64/R/library/elliptic/html/00Index.html
 /usr/lib64/R/library/elliptic/html/R.css
+/usr/lib64/R/library/elliptic/tests/aaa.R
