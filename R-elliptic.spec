@@ -4,7 +4,7 @@
 #
 Name     : R-elliptic
 Version  : 1.4.0
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/elliptic_1.4-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/elliptic_1.4-0.tar.gz
 Summary  : Weierstrass and Jacobi Elliptic Functions
